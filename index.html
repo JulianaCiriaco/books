@@ -1,18 +1,225 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
     <title>..:: books ::..</title>
 </head>
+
 <body>
-    <div id="menu">
-         <header id="header">
-            <a id="logo" href="index.html"><img src="./img/Books-logo.png" alt=""></a>
-</header>
+    <!-- Aula 15/04/2023 -->
+    <!-- Início Menu Responsivo -->
+    <header id="header">
+        <a id="logo" href="index.html"><img src="./img/Books-logo.png" alt="Logo Gamificando"></a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a class="linkMenu" href="index.html">Home</a></li>
+                <li><a class="linkMenu" href="produtos.html">Produtos</a></li>
+                <li><a class="linkMenu" href="streaming.html">#Streaming</a></li>
+                <li><a class="linkMenu" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fim menu responsivo-->
+    <!-- Início carousel página principal -->
+    <div id="carouselExampleInterval" class="carousel slide"     data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1500">
+                <img src="./img/carousel_01.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="./img/carousel_02.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="./img/carousel_03.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="./img/carousel_04.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="./img/carousel_05.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="./img/carousel_06.jpg" class="d-block w-100" alt="..." />
+            </div>
+        </div>
+        <!-- Alt + Shift + Seta para baixo, copia contéudo -->
+        <!-- alt + Shift >> Selecionando diversas e alterando o mesmo valor de forma simultanea -->
+        <!-- Início controle carousel -->
+        <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    
+    <!-- Fim controle carousel -->
+    <!-- Fim carousel página principal -->
+    <!-- Inicio Banner -->
+    <div class="section-banner-home">
+        <div class="container-fluid">
+            <div class="row m-0">
+                <div class="col-12 col-md-6">
+                    <figure>
+                        <img src="./img/bibi sesc.webp" class="img-fluid" alt="banner-home">
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6">
+                    <section class="texto-banner d-none d-md-block">
+                        <h1>Voce so tem uma vida, mas pode viver varias outras atraves da leitura</h1>
+                        <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+                            aperiam officiis, inventore illum obcaecati nisi ut? Itaque rerum, quibusdam assumenda iure
+                            recusandae autem laboriosam nisi, at, dignissimos nesciunt facilis harum.</p>
+                            <a href="produtos.html">Saiba Mais</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Banner-->
+    <!-- inicio destaque -->
+    <div class="destaque">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <!-- Inicio da tag section do texto de destaque -->
+                <section class="col-12">
+                    <h2>Que tal viajar numa historia?!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime natus tempore animi ratione
+                        totam! Maiores eius, ad minus blanditiis iusto officiis, et totam error culpa sint fugit
+                        excepturi reiciendis mollitia!</p>
+                </section>
+                <!-- Fim da tag section do texto de destaque -->
+                <!-- Inicio imagem -->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/as musas.jpg" alt="figura-destaque" width="100%"><a>
+                            <figcaption>As Musas <br> 15/06/2021</figcaption>
+                    </figure>
+                <div>
+                    <!-- Fim da imagem 1 -->
+                    <div class="col-12">
+                        <a href="#">Saiba mais</a>
+
+                    </div>
+                    <!-- Fim destaque -->
+                    <!-- Inicio do texto das novidades -->
+                    <div class="novidades" id="novidades-mobile">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div cold-md-6>
+                                    <section class="text-body">
+                                        <h2>vamos para varias aventuras!!</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis maxime, dolorem sequi dolorum sit minus similique, iusto sed possimus doloribus! Laudantium quisquam at omnis ducimus pariatur temporibus iure minus.</p>
+                                        <a class="bnt-banner" href="#" target="_blank">saiba mais</a>
+                                    </section>                        
+                                </div>
+                                <!-- Fim do texto novidades -->
+                                <!-- inicio da imagem novidades -->
+                            <div class="cold-md-6">
+                            </figure>
+                                    <img src="./img/bibi sesc.webp" class="img-fluid">
+                                    alt="banner-home"
+                                </figure>
+                            </div>
+                            <!-- fim da imagem novidades -->
+                        </div>
+                    </div>
+                </div>
+                <!-- inicio galeria -->
+                <div class="galria d-flex align-itens-center">
+                  <div class="container">
+                      <div class="row">
+                        <!-- inicio texto galerias -->
+                        <div class="col-12">
+                        <section class="texto-galeria">
+                            <h2>Conheca nossa galeria</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime expedita omnis optio porro ut quod unde deserunt nobis, voluptatem impedit excepturi reiciendis harum maiores eius quo officiis iste, beatae quam.</p>
+                            </section>
+                        </div>
+                        <!-- fim texto galerias -->
+                        <!-- inicio imagem 1 da galeria -->
+                        <div class="gallery col-6 col-md-3">
+                            <img src="./img/carousel_02.jpg" class="img-fluid" alt="img-galeria">
+                        </div>
+                        <!-- fim imagem 1 da galeria -->
+                        <!-- inicio imagem 2 da galeria -->
+                        <div class="gallery col-6 col-md-3">
+                            <img src="./img/carousel_02.jpg" class="img-fluid" alt="img-galeria">
+                        </div>
+                        <!-- fim imagem 2 da galeria -->
+                        <!-- inicio imagem 3 da galeria -->
+                        <div class="gallery col-6 col-md-3">
+                            <img src="./img/carousel_02.jpg" class="img-fluid" alt="img-galeria">
+                        </div>
+                        <!-- fim imagem 3 da galeria -->
+                        <!-- inicio imagem 4 da galeria -->
+                        <div class="gallery col-6 col-md-3">
+                            <img src="./img/carousel_02.jpg" class="img-fluid" alt="img-galeria">
+                        </div>
+                        <!-- fim imagem 4 da galeria -->
+                        <!-- inicio imagem 5 da galeria -->
+                        <div class="gallery col-6 col-md-3">
+                            <img src="./img/carousel_02.jpg" class="img-fluid" alt="img-galeria">
+                        </div>
+                        <!-- fim imagem 5 da galeria -->
+                        <!-- inicio imagem 6 da galeria -->
+                        <div class="gallery col-6 col-md-3">
+                            <img src="./img/carousel_02.jpg" class="img-fluid" alt="img-galeria">
+                        </div>
+                        <!-- fim imagem 6 da galeria -->
+                        <!-- inicio imagem 7 da galeria -->
+                        <div class="gallery col-6 col-md-3">
+                            <img src="./img/carousel_02.jpg" class="img-fluid" alt="img-galeria">
+                        </div>
+                        <!-- fim imagem 7 da galeria -->
+                        <!-- inicio imagem 8 da galeria -->
+                        <div class="gallery col-6 col-md-3">
+                            <img src="./img/carousel_02.jpg" class="img-fluid" alt="img-galeria">
+                        </div>
+                        <!-- fim imagem 8 da galeria -->
+                        <!-- inicio imagem 9 da galeria -->
+                        <div class="gallery col-6 col-md-3">
+                            <img src="./img/carousel_02.jpg" class="img-fluid" alt="img-galeria">
+                        </div>
+                        <!-- fim imagem 9 da galeria -->
+                        <!-- inicio imagem 10 da galeria -->
+                        <div class="gallery col-6 col-md-3">
+                            <img src="./img/carousel_02.jpg" class="img-fluid" alt="img-galeria">
+                        </div>
+                        <!-- fim imagem 10 da galeria -->
+                        <!-- inicio imagem 11 da galeria -->
+                        <div class="gallery col-6 col-md-3">
+                            <img src="./img/carousel_02.jpg" class="img-fluid" alt="img-galeria">
+                        </div>
+                        <!-- fim imagem 11 da galeria -->
+                        <!-- inicio imagem 12 da galeria -->
+                        <div class="gallery col-6 col-md-3">
+                            <img src="./img/carousel_02.jpg" class="img-fluid" alt="img-galeria">
+                        </div>
+                        <!-- fim imagem 12 da galeria --
+                     <div>
+                </div>
+            </div>
+            <-- fim da galeria -->
+            <!-- inicio footer -->
+
+
 </body>
+
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js">
+
+</script>
+
 </html>
